@@ -4,7 +4,7 @@
 
 #### 요청
 
-- {appKey}와 {secretKey}는 콘솔 상단 [URL & Appkey] 메뉴에서 확인이 가능합니다.
+- {appKey}와 {secretKey}는 콘솔 상단 **URL & Appkey** 메뉴에서 확인이 가능합니다.
 
 [URI]
 
@@ -77,7 +77,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
 |---|---|---|
 | isSuccessful | Boolean | 분석 API 성공 여부 |
 | resultCode | Integer | 결과 코드 |
-| resultMessage | String | 결과 메시지 (성공시 success, 실패시 오류 내용) |
+| resultMessage | String | 결과 메시지(성공 시 success, 실패 시 오류 내용) |
 
 [필드]
 
@@ -88,7 +88,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
 | values[0].value | String | 인식 내용 |
 | values[0].conf | Double | 인식 결과 신뢰도 |
 | resolution | String | 권장 해상도(HD 1280*720px) 이상이면 normal, 권장 해상도 미만은 low |
-| unitType | String | boxes 좌표 단위 (기본 pixel, PDF의 경우 point) |
+| unitType | String | boxes 좌표 단위(기본 pixel, PDF의 경우 point) |
 | boxes | List | 인식 영역(Bounding box) 좌표 목록 |
 | boxes[0] | Object  | 인식 영역 좌표 { x1, y1, x2, y2, x3, y3, x4, y4 } |
 

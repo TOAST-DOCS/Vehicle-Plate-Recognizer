@@ -7,15 +7,15 @@
 
 ### 분석을 위한 사진 업로드
 
-분석할 차량 이미지를 업로드 합니다.
+분석할 차량 이미지를 업로드합니다.
 
-- 이미지은 다음 2가지 방법으로 업로드 할 수 있습니다.
-    1. 이미지 업로드 버튼 클릭
+- 이미지는 다음 2가지 방법으로 업로드할 수 있습니다.
+    1. **이미지 업로드** 버튼 클릭
     2. 이미지 드래그 앤드 드롭
 
 ### 분석
 
-사진을 업로드한 후 분석 버튼을 클릭하면 분석 결과가 화면 오른쪽에 나타납니다.
+사진을 업로드한 후 **분석** 버튼을 클릭하면 분석 결과가 화면 오른쪽에 나타납니다.
 
 ![Business Registration](http://static.toastoven.net/prod_document_ocr/business_ocr_console_ko.png)
 
@@ -26,9 +26,9 @@
     * [values] 분석 결과
         * [value] 인식한 차량 번호판 내용
         * [conf] 분석 결과에 대한 신뢰도
-    * [unitType] boxes 좌표 단위 (기본 pixel, PDF의 경우 point)
+    * [unitType] boxes 좌표 단위(기본 pixel, PDF의 경우 point)
     * [resolution] 권장 해상도(HD 1280*720px) 이상이면 normal, 권장 해상도 미만은 low
-    * [boxes] 인식 영역에 대한 이미지 상의 좌표값 (box 별 {x1, y1, x2, y2, x3, y3, x4, y4} 형태)
+    * [boxes] 인식 영역에 대한 이미지 상의 좌표값(box 별 {x1, y1, x2, y2, x3, y3, x4, y4} 형태)
     
         ![bbox](http://static.toastoven.net/prod_document_ocr/bbox.png)
     

@@ -1,6 +1,6 @@
 ## AI Service > Vehicle Plate Recognizer > 개요
 
-Vehicle Plate Recognizer는 OCR(광학 문자 인식)기술을 통해, 차량 번호판의 문자 영역을 인식하고,  영역 별 문자를 추출합니다.   
+Vehicle Plate Recognizer는 OCR(광학 문자 인식)기술을 통해, 차량 번호판의 문자 영역을 인식하고, 영역 별 문자를 추출합니다.   
 문자 영역 인식 및 영역 별 문자 추출에 대한 결과는 수준 높은 정확도를 제공하고, 차량 번호판 인식이 필요한 비즈니스에 최적화된 OCR 기술을 제공합니다. 
 
 ## 주요 기능

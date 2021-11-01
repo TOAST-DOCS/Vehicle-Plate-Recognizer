@@ -26,10 +26,9 @@
     * [values] 분석 결과
         * [value] 인식한 차량 번호판 내용
         * [conf] 분석 결과에 대한 신뢰도
-    * [unitType] boxes 좌표 단위(기본 pixel, PDF의 경우 point)
     * [resolution] 권장 해상도(HD 1280*720px) 이상이면 normal, 권장 해상도 미만은 low
     * [boxes] 인식 영역에 대한 이미지 상의 좌표값(box 별 {x1, y1, x2, y2, x3, y3, x4, y4} 형태)
     
         ![bbox](http://static.toastoven.net/prod_document_ocr/bbox.png)
     
-* 분셕 결과에 대한 복사 및 다운로드(CSV, JSON) 기능을 제공합니다. 
+* 분셕 결과에 대한 복사 및 다운로드(JSON) 기능을 제공합니다. 

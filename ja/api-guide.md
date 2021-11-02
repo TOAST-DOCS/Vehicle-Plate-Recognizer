@@ -49,7 +49,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
         "fileType": "jpg",
         "values": [
             {
-                "value":" 35노6222",
+                "value":"123가4567",
                 "conf":0.93
             }
         ],

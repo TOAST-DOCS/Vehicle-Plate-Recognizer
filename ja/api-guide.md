@@ -46,7 +46,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
         "resultMessage": "SUCCESS"
     },
     "result": {
-        "fileType": "jpg",
+        "fileType": "png",
         "values": [
             {
                 "value":"123가4567",

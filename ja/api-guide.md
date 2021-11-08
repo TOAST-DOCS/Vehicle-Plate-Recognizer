@@ -82,7 +82,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
 
 | 이름 | 타입 | 설명 |
 |---|---|---|
-| fileType | String | 파일 확장자 (jpg, png) |
+| fileType | String | 파일 확장자(jpg, png) |
 | values | List | 인식 결과 목록 |
 | values[0].value | String | 인식 내용 |
 | values[0].conf | Double | 인식 결과 신뢰도 |

@@ -1,13 +1,13 @@
 ## AI Service > Vehicle Plate Recognizer > 콘솔 사용 가이드
 
-콘솔을 통해 차량 번호판 이미지을 올리고 분석 결과를 얻을 수 있습니다.
+콘솔을 통해 차량 번호판 이미지를 올리고 분석 결과를 얻을 수 있습니다.
 
 ## 차량 번호판 분석
 
 
 ### 분석을 위한 사진 업로드
 
-분석할 차량 이미지를 업로드합니다.
+분석할 차량 번호판 이미지를 업로드합니다.
 
 - 이미지는 다음 2가지 방법으로 업로드할 수 있습니다.
     1. **이미지 업로드** 버튼 클릭
@@ -19,10 +19,10 @@
 
 ![Vehicle Plate Registration](http://static.toastoven.net/prod_carplate_ocr/VehiclePlateOCR_console_en.png)
 
-* [텍스트(Key Value)] 분석된 사업자등록증의 내용을 Key/Value 형태로 표시합니다.
+* [텍스트(Key Value)] 분석된 차량 번호판의 내용을 Key/Value 형태로 표시합니다.
 * [JSON] 분석한 결과를 JSON 형태로 표시합니다.
     * [success] 분석 성공/실패 여부
-    * [fileType] 파일 확장자 (jpg, png)
+    * [fileType] 파일 확장자(jpg, png)
     * [values] 분석 결과
         * [value] 인식한 차량 번호판 내용
         * [conf] 분석 결과에 대한 신뢰도
@@ -31,4 +31,4 @@
     
         ![bbox](http://static.toastoven.net/prod_document_ocr/bbox.png)
     
-* 분셕 결과에 대한 복사 및 다운로드(JSON) 기능을 제공합니다. 
+* 분석 결과 복사 및 다운로드(JSON) 기능을 제공합니다. 

@@ -1,26 +1,26 @@
-## AI Service > Vehicle Plate Recognizer > API 가이드
+## AI Service > Vehicle Plate Recognizer > APIガイド
 
-### 차량 번호판 분석 API
+### 車両ナンバープレート分析API
 
-#### 요청
+#### リクエスト
 
-- {appKey}와 {secretKey}는 콘솔 상단 **URL & Appkey** 메뉴에서 확인이 가능합니다.
+- {appKey}と{secretKey}はコンソール上部の**URL & Appkey**メニューで確認できます。
 
 [URI]
 
-| 메서드 | URI |
+| メソッド | URI |
 |---|---|
 | POST | https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle |
 
-[요청 헤더]
+[リクエストヘッダ]
 
-| 이름 | 값 | 설명 |
+| 名前 | 値 | 説明 |
 |---|---|---|
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
+| Authorization | {secretKey} | コンソールで発行されたセキュリティキー |
 
-[요청 본문]
+[リクエスト本文]
 
-- 이미지 파일의 Binary Data를 넣습니다.
+- 画像ファイルのBinary Dataを入れます。
 
 ```
 curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle' \
@@ -28,15 +28,15 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
 -H 'Authorization: ${secretKey}'
 ```
 
-[필드]
+[フィールド]
 
-| 이름 | 타입 | 설명 |
+| 名前 | タイプ | 説明 |
 |---|---|---|
-| image | multipart/form–data | 이미지 파일 |
+| image | multipart/form–data | 画像ファイル |
 
-#### 응답
+#### レスポンス
 
-[응답 본문]
+[レスポンス本文]
 
 ```
 {
@@ -49,7 +49,7 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
         "fileType": "png",
         "values": [
             {
-                "value":"123가4567",
+                "value":"123が4567",
                 "conf":0.93
             }
         ],
@@ -70,27 +70,26 @@ curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle'
 }
 ```
 
-[헤더]
+[ヘッダ]
 
-| 이름 | 타입 | 설명 |
+| 名前 | タイプ | 説明 |
 |---|---|---|
-| isSuccessful | Boolean | 분석 API 성공 여부 |
-| resultCode | Integer | 결과 코드 |
-| resultMessage | String | 결과 메시지(성공 시 success, 실패 시 오류 내용) |
+| isSuccessful | Boolean | 分析API成否 |
+| resultCode | Integer | 結果コード |
+| resultMessage | String | 結果メッセージ(成功時はsuccess、失敗時はエラー内容) |
 
-[필드]
+[フィールド]
 
-| 이름 | 타입 | 설명 |
+| 名前 | タイプ | 説明 |
 |---|---|---|
-| fileType | String | 파일 확장자(jpg, png) |
-| values | List | 인식 결과 목록 |
-| values[0].value | String | 인식 내용 |
-| values[0].conf | Double | 인식 결과 신뢰도 |
-| resolution | String | 권장 해상도(HD 1280*720px) 이상이면 normal, 권장 해상도 미만은 low |
-| boxes | List | 인식 영역(Bounding box) 좌표 목록 |
-| boxes[0] | Object  | 인식 영역 좌표 { x1, y1, x2, y2, x3, y3, x4, y4 } |
+| fileType | String | ファイル拡張子(jpg、png) |
+| values | List | 認識結果リスト |
+| values[0].value | String | 認識内容 |
+| values[0].conf | Double | 認識結果の信頼度 |
+| resolution | String | 推奨解像度(HD 1280*720px)以上の場合はnormal、推奨解像度未満はlow |
+| boxes | List | 認識領域(Bounding box)座標リスト |
+| boxes[0] | Object  | 認識領域座標{ x1、y1、x2、y2、x3、y3、x4、y4 } |
 
 * boxes[0]
  
     ![Bounding box](http://static.toastoven.net/prod_document_ocr/bbox.png)
-

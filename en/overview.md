@@ -34,7 +34,7 @@ For more accurate license plate analysis, please refer to the guide below.
 
 * Example of a license plate analysis image
 
-![Image Example](http://static.toastoven.net/prod_carplate_ocr/VehiclePlateOCR_ex_img.png)
+![Image Example](http://static.toastoven.net/prod_carplate_ocr/VehiclePlateOCR_ex_img_en.png)
 
 ## Service Targets
 * When you need to build a parking management system that manages vehicle entry and exit

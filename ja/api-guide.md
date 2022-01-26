@@ -24,7 +24,7 @@
 
 ```
 curl -X POST 'https://ocr.api.nhncloudservice.com/v1.0/appkeys/{appKey}/vehicle' \
--F 'image=@sample.png' 
+-F 'image=@sample.png' \
 -H 'Authorization: ${secretKey}'
 ```
 

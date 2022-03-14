@@ -44,6 +44,6 @@ For more accurate license plate analysis, please refer to the guide below.
 * When you require car information analysis
 
 ## Privacy Policy
-* While using the Vehicle Plate Recognizer service, the customer may collect personal and sensitive information of their users. Therefore, the customer of this service must inform a legal notice to their users as per the Personal Information Protection Act and acquire their consent regarding the matter. Also during this process, work consignment relation regarding the processing of personal information may arise between the customer and NHN. The customer who assumes the position of consignor may enter into a consignment contract with the consignee, NHN, separately in writing, and post a privacy policy notice by referencing the following:
-    - Consignee: NHN 
+* While using the Vehicle Plate Recognizer service, the customer may collect personal and sensitive information of their users. Therefore, the customer of this service must inform a legal notice to their users as per the Personal Information Protection Act and acquire their consent regarding the matter. Also during this process, work consignment relation regarding the processing of personal information may arise between the customer and NHN Cloud. The customer who assumes the position of consignor may enter into a consignment contract with the consignee, NHN Cloud, separately in writing, and post a privacy policy notice by referencing the following:
+    - Consignee: NHN Cloud Corp.
     - Consignment Description: Providing Vehicle Plate Recognizer service
